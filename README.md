@@ -5,11 +5,11 @@ Computer Exercise 2
 
 Decoder_Structural.vhd simulation results:
 
-![alt tag](https://raw.github.com/John-Rios/ECE281_CE2/blob/master/Decoder_Structural.JPG)
+![alt tag](https://raw.github.com/John-Rios/ECE281_CE2/blob/master/Decoder_Structural.png)
 
 Decoder_Behavioral.vhd simulation results:
 
-![alt tag](https://raw.github.com/John-Rios/ECE281_CE2/blob/master/Decoder_Behavioral.JPG)
+![alt tag](https://raw.github.com/John-Rios/ECE281_CE2/blob/master/Decoder_Behavioral.png)
 
 The results from both simulations are the same. In addition to matching each other, simulation results 
 match the results shown in the CE2 handout. This leads me to believe, with confidence, that my results, 

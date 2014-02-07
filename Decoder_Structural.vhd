@@ -1,14 +1,14 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Section:	 T6 
+-- Engineer: John Rios
 -- 
 -- Create Date:    17:12:15 02/04/2014 
--- Design Name: 
+-- Design Name: 	 Computer Exercise 2
 -- Module Name:    Decoder_Structural - Structural 
--- Project Name: 
+-- Project Name:   CE2
 -- Target Devices: 
 -- Tool versions: 
--- Description: 
+-- Description: 	 Memory Controller
 --
 -- Dependencies: 
 --
@@ -41,8 +41,63 @@ end Decoder_Structural;
 
 architecture Structural of Decoder_Structural is
 
+	COMPONENT and3
+	PORT(
+		I0 : IN std_logic;
+		I1 : IN std_logic;
+		I2 : IN std_logic;
+		O : OUT std_logic
+		);
+	END COMPONENT;
+	
+	COMPONENT inverter 
+	PORT(
+		I : IN std_logic;
+		O : OUT std_logic
+		);
+	END COMPONENT;
+	
+Signal I0_Not, I1_Not : std_logic;
+
 begin
 
+	I0_inv: inverter PORT MAP(
+		I => I0,
+		O => I0_Not
+		);
+		
+	I1_inv: inverter PORT MAP(
+		I => I1,
+		O => I1_Not
+		);
+		
+	Y0_and3: and3 PORT MAP(
+		I0 => I0_Not,
+		I1 => I1_Not,
+		I2 => EN,
+		O => Y0
+	);
 
+	Y1_and3: and3 PORT MAP(
+		I0 => I0,
+		I1 => I1_Not,
+		I2 => EN,
+		O => Y1
+	);
+
+	Y2_and3: and3 PORT MAP(
+		I0 => I0_Not,
+		I1 => I1,
+		I2 => EN,
+		O => Y2
+	);
+	
+	Y3_and3: and3 PORT MAP(
+		I0 => I0,
+		I1 => I1,
+		I2 => EN,
+		O => Y3
+	);
+	
 end Structural;
 

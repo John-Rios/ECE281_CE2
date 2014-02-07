@@ -20,10 +20,10 @@ Question from step 15 of CE2 handout
 
 A decoder has N inputs and has 2^N outputs. A decoder exerts one output per input combination. Decoders decode binary numbers into "one-of-2^N" code where an output has a unique true code.
 
-Decoding allows a processor to address a memory space that is much larger than the memory space covered by an individual memory chip. Decoding is necessary in order to splice a memory devide into the addresss space of the processor. 
+Decoding allows a processor to address a memory space that is much larger than the memory space covered by an individual memory chip. Decoding is necessary in order to splice a memory divide into the address space of the processor. 
 
 ________________________________________________________________________________________________________________________
 
 CE2 Summary
 
-CE2 helped me understand the difference between behavioral code and structural code. This lab allowed me to practice coding both behavioral and structural code in VHDL. My CE2 code was successful based on the simulation results. I ran into one bug on the structural portion of the exercise. C2C Scott Agnolutto helped me spot my error. I had reveresed the equal sign for an inverter line and also miss associated my testbench file so that it referenced another file. When I reversed the equal sign and renamed the missnamed association on my testbench file the code worked. After this, I ran into no troubles with my behavioral code. 
+CE2 helped me understand the difference between behavioral code and structural code. This lab allowed me to practice coding both behavioral and structural code in VHDL. My CE2 code was successful based on the simulation results. I ran into one bug on the structural portion of the exercise. C2C Scott Agnolutto helped me spot my error. I had reversed the equal sign for an inverter line and also miss associated my testbench file so that it referenced another file. When I reversed the equal sign and renamed the miss-named association on my testbench file the code worked. After this, I ran into no troubles with my behavioral code. 
